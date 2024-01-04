@@ -12,9 +12,9 @@ source /usr/share/fzf/completion.zsh
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
 #bindkey -s ^f "tmux-sessionizer\n"
-alias vi="lvim"
-alias vim="lvim"
-alias nvim="lvim"
+#alias vi="lvim"
+#alias vim="lvim"
+#alias nvim="lvim"
 
 cat() {
     bat $1 --theme gruvbox-dark --style plain --no-pager

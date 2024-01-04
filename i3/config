@@ -135,6 +135,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 bindsym $mod+shift+x exec /usr/bin/betterlockscreen -l dim
 #bindsym $mod+shift+F4 --release exec --no-startup-id "sh ~/.local/bin/screenshot 2>/tmp/customlog"
+bindsym $mod+shift+F4 --release exec --no-startup-id ~/.local/bin/rofi-screenshot
 
 # split in horizontal orientation
 bindsym $mod+shift+v split h
@@ -254,6 +255,8 @@ bindsym $mod+r mode "$mode_resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 #A finds out, if available)
+
+include current_theme
 bar {
     font pango:Hack Nerd Mono, FontAwesome 12
     position top
@@ -272,7 +275,6 @@ bar {
 #    }
 }
 
-include current_theme
 #bar {
 #  position top
 #  output nonprimary

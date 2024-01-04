@@ -20,3 +20,6 @@ spotifyd = "~/.config/spotifyd"
 [Xresources.files]
 ".Xmodmap" = "~/.Xmodmap"
 ".Xresources" = "~/.Xresources"
+
+[scripts.files]
+"scripts/rofi-screenshot" = "~/.local/bin/rofi-screenshot"
