@@ -1,0 +1,7 @@
+import = ["base16-catppuccin-mocha-256.toml"]
+
+[font]
+size = 10
+
+[font.normal]
+family = "Hack Nerd Font"

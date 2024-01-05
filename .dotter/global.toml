@@ -13,6 +13,7 @@ dunst = "~/.config/dunst"
 
 [zsh.files]
 ".zshrc" = "~/.zshrc"
+".zsh" = "~/.zsh"
 
 [spotifyd.files]
 spotifyd = "~/.config/spotifyd"
@@ -23,3 +24,10 @@ spotifyd = "~/.config/spotifyd"
 
 [scripts.files]
 "scripts/rofi-screenshot" = "~/.local/bin/rofi-screenshot"
+
+[sheldon.files]
+sheldon = "~/.config/sheldon"
+
+[alacritty.files]
+alacritty = { target = "~/.config/alacritty", type="symbolic"}
+

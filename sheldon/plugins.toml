@@ -1,0 +1,4 @@
+[plugins.base16-shell]
+github = "chriskempson/base16-shell"
+branch = "master"
+

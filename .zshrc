@@ -1,8 +1,8 @@
-# Created by newuser for 5.9
-#
-#
 autoload -Uz compinit
 compinit
+
+source ~/.zsh/plugins/antigen/antigen.zsh
+source ~/.zsh/plugins/zsh-completions/zellij_completion.plugin.zsh
 
 export XDG_CONFIG_HOME=$HOME/.config
 VIM="lvim"
@@ -41,7 +41,7 @@ eval "$(mcfly --history_format zsh-extended init zsh)"
 eval "$(zoxide init zsh)"
 
 eval "$(op completion zsh)"; compdef _op op
-
-
+eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(sheldon source)"
 export OPENAPI_API_KEY={{openapi_api_key}}
 
