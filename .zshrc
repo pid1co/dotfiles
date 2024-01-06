@@ -57,8 +57,9 @@ export BASE16_TMUX_OPTION_ACTIVE=1
 setopt INTERACTIVE_COMMENTS
 typeset -A ZSH_HIGHLIGHT_STYLES
 
-ZSH_HIGHLIGHT_STYLES[comment]='fg=yellow'
-
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#f9e2af'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#cba6f7'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#b4befe'
 #Disabling conflicting oh-my-zsh aliases
 #unalias ls 2>/dev/null
 #unalias la 2>/dev/null
