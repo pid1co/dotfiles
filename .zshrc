@@ -7,8 +7,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 export GOPATH=$HOME/go
-export GIT_EDITOR=$VIM
-export BROWSER=brave
+export GIT_EDITOR=nvim
 
 ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_AUTOCONNECT=false
