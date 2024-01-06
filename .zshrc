@@ -8,8 +8,9 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
+export BROWSER=brave
 
-ZSH_TMUX_AUTOSTART=true # By default, it's the same value as autostart |
+ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_AUTOCONNECT=false
 #bindkey -s ^f "tmux-sessionizer\n"
 #alias vi="lvim"
@@ -54,6 +55,10 @@ export OPENAI_API_KEY={{openapi_api_key}}
 
 export BASE16_TMUX_OPTION_STATUSBAR=1
 export BASE16_TMUX_OPTION_ACTIVE=1
+setopt INTERACTIVE_COMMENTS
+typeset -A ZSH_HIGHLIGHT_STYLES
+
+ZSH_HIGHLIGHT_STYLES[comment]='fg=yellow'
 
 #Disabling conflicting oh-my-zsh aliases
 #unalias ls 2>/dev/null
