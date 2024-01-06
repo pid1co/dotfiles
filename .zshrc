@@ -60,6 +60,7 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]='fg=#f9e2af'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#cba6f7'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#b4befe'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#a6e3a1'
 #Disabling conflicting oh-my-zsh aliases
 #unalias ls 2>/dev/null
 #unalias la 2>/dev/null
