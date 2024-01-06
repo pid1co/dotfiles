@@ -9,7 +9,8 @@ source /usr/share/fzf/completion.zsh
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
 
-# ZSH_TMUX_AUTOQUIT=true # By default, it's the same value as autostart |
+ZSH_TMUX_AUTOSTART=true # By default, it's the same value as autostart |
+ZSH_TMUX_AUTOCONNECT=false
 #bindkey -s ^f "tmux-sessionizer\n"
 #alias vi="lvim"
 #alias vim="lvim"
