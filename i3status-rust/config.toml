@@ -1,5 +1,5 @@
 [theme]
-theme = "dracula"
+theme = "ctp-mocha"
 
 [icons]
 icons = "awesome4"
@@ -30,10 +30,10 @@ block = "time"
 interval = 5
 format = " $timestamp.datetime(f:'%a %Y-%m-%d %H:%M:%S') "
 
-[[block]]
-block = "custom"
-command = "echo \uf030" # assumes fontawesome icons
-interval = "once"
-[[block.click]]
-button = "left"
-cmd = "sh ~/.local/bin/screenshot 2>/tmp/custom_block.log"
+#[[block]]
+#block = "custom"
+#command = "echo \uf030" # assumes fontawesome icons
+#interval = "once"
+#[[block.click]]
+#button = "left"
+#cmd = "sh ~/.local/bin/screenshot 2>/tmp/custom_block.log"
