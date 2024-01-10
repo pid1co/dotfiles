@@ -49,7 +49,7 @@ eval "$(zoxide init zsh)"
 
 eval "$(op completion zsh)"; compdef _op op
 #eval "$(zellij setup --generate-auto-start zsh)"
-eval "$(sheldon source)"
+#eval "$(sheldon source)"
 export OPENAI_API_KEY={{openapi_api_key}}
 
 export BASE16_TMUX_OPTION_STATUSBAR=1
@@ -61,12 +61,3 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=#f9e2af'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#cba6f7'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#b4befe'
 ZSH_HIGHLIGHT_STYLES[command]='fg=#a6e3a1'
-#Disabling conflicting oh-my-zsh aliases
-#unalias ls 2>/dev/null
-#unalias la 2>/dev/null
-#unalias ll 2>/dev/null
-# ls and ll are functions aliased to use exa by the ls plugin
-#alias llt='ll --tree'
-#alias llti='ll --tree --git-ignore'
-#alias lla='ll -a' 
-

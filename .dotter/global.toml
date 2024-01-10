@@ -34,3 +34,8 @@ alacritty = { target = "~/.config/alacritty", type="symbolic"}
 
 [tmux.files]
 ".tmux.conf" = "~/.tmux.conf"
+
+[bash.files]
+".bashrc" = "~/.bashrc"
+".bash_profile" = "~/.bash_profile"
+
