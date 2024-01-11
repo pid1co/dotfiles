@@ -16,5 +16,7 @@ antigen bundle tmux
 
 antigen bundle kubectl
 
+antigen bundle direnv
+
 antigen apply
 

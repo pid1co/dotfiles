@@ -25,9 +25,9 @@ for_window [class="1Password"] floating enable move position center
 #for_window [class="Spotify"] floating enabled, resize set 1000x900
 #for_window [class="Spotify"] move to workspace $ws5
 for_window [class="Slack"] move to workspace $ws4
-for_window [class="^jetbrains-.+"] move to workspace $ws2
+for_window [class="^jetbrains-.+"] border none move to workspace $ws2
 
-for_window [class="^spotify$"] move to workspace $ws10
+for_window [class="^spotify$"] border none move to workspace $ws10
 exec --no-startup-id i3-msg 'workspace $ws10; exec spotify-launcher'
 bindsym $mod+shift+s exec spotify-launcher
 
@@ -59,6 +59,8 @@ floating_maximum_size -1 x -1
 focus_follows_mouse no
 floating_modifier $mod
 
+for_window [class="Alacritty" title="__text_scratchpad"] floating enable move position center
+bindsym $mod+Shift+g exec --no-startup-id ~/.config/i3/scripts/text-scratchpad
 
 #set_from_resource $back i3wm.background #1D1F21
 #set_from_resource $black i3wm.color0 #282A2E

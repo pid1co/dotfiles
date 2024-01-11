@@ -1,5 +1,5 @@
 #!/bin/bash
-config_file="$HOME/dotfiles/config/i3/config"
+config_file="$HOME/dotfiles/i3/config"
 #config_file=${config_file/source = ~/}
 #config_file=${config_file/source=~/}
 

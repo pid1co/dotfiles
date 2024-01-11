@@ -61,3 +61,14 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=#f9e2af'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#cba6f7'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#b4befe'
 ZSH_HIGHLIGHT_STYLES[command]='fg=#a6e3a1'
+
+
+isup() {
+	local uri=$1
+
+	if curl -s --head  --request GET "$uri" | grep "200 OK" > /dev/null ; then
+		notify-send --urgency=critical "$uri is down"
+	else
+		notify-send --urgency=low "$uri is up"
+	fi
+}
