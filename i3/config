@@ -26,8 +26,8 @@ for_window [class="1Password"] floating enable move position center
 #for_window [class="Spotify"] move to workspace $ws5
 for_window [class="Slack"] move to workspace $ws4
 for_window [class="^jetbrains-.+"] border none move to workspace $ws2
-
-for_window [class="^spotify$"] border none move to workspace $ws10
+for_window [class="Alacritty"] border none
+for_window [class="^Spotify$"] border none move to workspace $ws10
 exec --no-startup-id i3-msg 'workspace $ws10; exec spotify-launcher'
 bindsym $mod+shift+s exec spotify-launcher
 
@@ -59,7 +59,7 @@ floating_maximum_size -1 x -1
 focus_follows_mouse no
 floating_modifier $mod
 
-for_window [class="Alacritty" title="__text_scratchpad"] floating enable move position center
+for_window [class="Alacritty" title="__text_scratchpad"] floating enable move position center border pixel 2
 bindsym $mod+Shift+g exec --no-startup-id ~/.config/i3/scripts/text-scratchpad
 
 #set_from_resource $back i3wm.background #1D1F21
@@ -241,8 +241,8 @@ bindsym $mod+r mode "$mode_resize"
 
 include current_theme
 #bar {
-#    font pango:Hack Nerd Mono, FontAwesome 12
-#    position top
+  #  font pango:Hack Nerd Mono, FontAwesome 12
+ #   position top
 #    output primary
 #    status_command i3status-rs ~/.config/i3status-rust/config.toml
 #    colors {
@@ -257,6 +257,7 @@ include current_theme
 #        binding_mode       #FF5555 #FF5555 #F8F8F2
 #    }
 #}
+# bar
 
 #bar {
 #  position top
