@@ -8,6 +8,7 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 export GOPATH=$HOME/go
 export GIT_EDITOR=nvim
+export BROWSER=brave
 
 ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_AUTOCONNECT=false
@@ -48,6 +49,8 @@ eval "$(mcfly --history_format zsh-extended init zsh)"
 eval "$(zoxide init zsh)"
 
 eval "$(op completion zsh)"; compdef _op op
+eval "$(direnv hook zsh)"
+
 #eval "$(zellij setup --generate-auto-start zsh)"
 #eval "$(sheldon source)"
 export OPENAI_API_KEY={{openapi_api_key}}

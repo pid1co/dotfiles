@@ -15,6 +15,7 @@ exec --no-startup-id slack
 exec --no-startup-id xidelhook --timer 300 "brightnessctl set 600" "brightnessctl set 1500" exec --no-startup-id xidlehook --not-when-audio --timer 360 "betterlockscren -l dim"
 #exec --no-startup-id clion
 exec_always --no-startup-id autotiling
+exec_always --no-startup-id qpwgraph
 
 gaps inner 10
 gaps outer 0
@@ -43,6 +44,7 @@ for_window [window_type="dialog"] floating enable
 exec --no-startup-id xsetroot -solid black
 exec --no-startup-id nm-applet
 exec --no-startup-id copyq
+
 #bindsym Print exec "flameshot gui"
 
 # Use pactl to adjust volume in PulseAudio.
