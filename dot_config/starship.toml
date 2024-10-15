@@ -1,0 +1,45 @@
+add_newline = false
+
+[kubernetes]
+format = "[$symbol$cluster( ($namespace))]($style) "
+disabled = false
+
+[kubernetes.context_aliases]
+'dev.local.cluster.k8s'= 'dev'
+'.*/openshift-cluster/.*'= 'openshift'
+'gke_.*_(?P<var_cluster>[\w-]+)'='gke-$var_cluster'
+
+[kubernetes.user_aliases]
+"dev.local.cluster.k8s"= "dev"
+"root/.*"="root"
+
+[username]
+format = "[$user@]($style)"
+show_always = true
+
+[fill]
+symbol = " "
+disabled = false
+
+[time]
+time_format = "%R"
+format = "[$time]($style)"
+disabled = false
+
+[hostname]
+format = "[@$hostname]($style) "
+ssh_only = false
+style = "bold green"
+
+[directory]
+format = "[ $path ]($style)"
+style = "green"
+truncation_length = 8
+truncation_symbol = ".../"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style))"
+
+[git_branch]
+format = "[$symbol$branch]($style)"
+
