@@ -1,0 +1,22 @@
+antigen use oh-my-zsh
+# Creates useful git aliases
+antigen bundle git
+
+# Automatically starts the ssh-agent and loads the credentials defined in  
+# ~/.ssh
+antigen bundle ssh-agent
+# add some aliases and integration with the exa command
+#antigen bundle zpm-zsh/ls
+# add auto-completions for popular tools like nvm, bundle, etc.
+#antigen bundle zsh-users/zsh-completions
+# syntax highlighting for commands: green when it exists, red otherwise.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen bundle tmux
+
+antigen bundle kubectl
+
+antigen bundle direnv
+
+antigen apply
+

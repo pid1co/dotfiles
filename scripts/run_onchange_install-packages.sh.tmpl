@@ -1,0 +1,19 @@
+{{ if eq .chezmoi.os "linux"  -}} 
+{{ if eq .chezmoi.osRelease.name "Arch Linux" -}}
+#!/usr/bin/sh 
+{{ range .packages.universal.paru -}}
+paru -S --noconfirm {{ . }}
+{{ end -}}
+{{ end -}}
+{{ else if eq .chezmoi.os "darwin" -}}
+brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range .packages.universal.tap -}}
+tap {{ . | quote | replace " " "\", \"" }}
+{{ end -}}
+{{ range .packages.universal.brews -}}
+brew {{ . | quote }}
+{{ end -}}
+{{ range .packages.universal.casks -}}
+cask {{ . | quote }}
+{{ end -}}
+{{ end -}}

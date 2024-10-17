@@ -1,0 +1,15 @@
+{{ if eq .chezmoi.os "linux" -}}
+{{ if eq .chezmoi.osRelease.name "Arch Linux" -}}
+{{ if eq .chezmoi.arch "amd64" -}}
+#!/bin/sh
+echo "Installing paru"
+sudo pacman -S --needed base-devel curl
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+{{ end -}}
+{{ end -}}
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+{{ end -}}

@@ -1,0 +1,19 @@
+[".local/share/fonts/JuliaMono"]
+  type = "archive"
+  url = "https://github.com/cormullion/juliamono/releases/latest/download/JuliaMono-ttf.zip"
+  exact = true
+  refreshPeriod="168h"
+[".local/share/fonts/iosevka_nerd_font"]
+  type = "archive"
+  url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IosevkaTerm.zip"
+  exact = true
+  refreshPeriod="168h"
+[".local/share/fonts/victor-mono"]
+  type = "archive"
+  url = "https://github.com/rubjo/victor-mono/archive/refs/tags/v1.5.6.tar.gz"
+  exact = true
+  stripComponents = 1
+[".local/share/fonts/iosevka"]
+  type = "archive"
+  url = "https://github.com/be5invis/Iosevka/releases/download/v31.9.1/PkgTTF-IosevkaTerm-31.9.1.zip"
+  exact = true

@@ -1,6 +1,7 @@
 add_newline = false
 
 [kubernetes]
+style = "bg:#665c54"
 format = "[$symbol$cluster( ($namespace))]($style) "
 disabled = false
 
@@ -16,30 +17,43 @@ disabled = false
 [username]
 format = "[$user@]($style)"
 show_always = true
+style_user = "bg:#458588"
+style_root = "bg:#458588"
 
 [fill]
 symbol = " "
 disabled = false
 
+#[time]
+#time_format = "%R"
+#format = "[$time]($style)"
+#disabled = false
+
 [time]
-time_format = "%R"
-format = "[$time]($style)"
 disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#504945"
+format = '[  $time ]($style)'
 
 [hostname]
 format = "[@$hostname]($style) "
 ssh_only = false
-style = "bold green"
+style = "bg:#928374"
+#style = "bold green"
+
 
 [directory]
+style = "bg:#98971a"
 format = "[ $path ]($style)"
-style = "green"
 truncation_length = 8
-truncation_symbol = ".../"
+truncation_symbol = "…/"
 
-[git_status]
-format = "([$all_status$ahead_behind]($style))"
 
 [git_branch]
-format = "[$symbol$branch]($style)"
+symbol = ""
+style = "bg:#d79921"
+format = '[ $symbol $branch ]($style)'
 
+[git_status]
+style = "bg:#d79921"
+format = '[$all_status$ahead_behind ]($style)'

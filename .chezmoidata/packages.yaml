@@ -1,0 +1,34 @@
+packages:
+  universal:
+    paru:
+      - "neovim"
+      - "tree-sitter"
+      - "polkit"
+      - "xfce-polkit"
+      - "dex"
+      - "1password"
+      - "1password-cli"
+    taps:
+      - "1password/tap"
+      - "homebrew/bundle"
+      - "git-duet/tap"
+    brews:
+      - "git"
+      - "htop"
+      - "neovim"
+      - "curl"
+      - "wget"
+      - "unzip"
+      - "go"
+      - "lua"
+      - "neofetch"
+      - "rust"
+      - "yq"
+      - "jq"
+      - "zsh"
+      - "fzg"
+      - "tmux"
+      - "make"
+      - "python"
+    casks:
+      - "docker"
