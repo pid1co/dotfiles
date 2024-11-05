@@ -6,7 +6,12 @@
   "editor.formatOnPaste": true,
   "redhat.telemetry.enabled": false,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "grammarly.files.include": ["**/readme.md", "**/README.md", "**/*.txt", "**/*.md"],
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "**/*.md"
+  ],
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.sideBar.location": "left",
   //"workbench.statusBar.visible": false,
@@ -20,13 +25,39 @@
   "rust-analyzer.inlayHints.typeHints.enable": true,
   "workbench.settings.applyToAllProfiles": [],
   "grammarly.config.suggestions.UnnecessaryEllipses": true,
-  "editor.rulers": [120],
+  "editor.rulers": [
+    120
+  ],
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 20,
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-  "C_Cpp.default.includePath": ["$default", "/usr/include/**"],
+  "C_Cpp.default.includePath": [
+    "$default",
+    "/usr/include/**"
+  ],
   "github.copilot.editor.enableAutoCompletions": true,
   "prettier.printWidth": 130,
-  "terminal.integrated.rescaleOverlappingGlyphs": false
+  "terminal.integrated.rescaleOverlappingGlyphs": false,
+  "dev.containers.defaultExtensions": [
+    "eamodio.gitlens",
+    "mutantdino.resourcemonitor",
+    "GitHub.copilot",
+    "GitHub.copilot-chat"
+  ],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
 }

@@ -5,9 +5,10 @@ add mod1 = Super_L
 add mod4 = Alt_L
 
 ! Remap ESC to Caps-Lock and Caps-Lock to Right-Ctl
-keycode 66 = Caps_Lock
-keycode 9 = Escape
-remove Lock = Caps_Lock
-add Lock = Escape
-keycode 9 = Caps_Lock
-keycode 66 = Escape
+! Disalble when using ultimate hacking keyboard
+!keycode 66 = Caps_Lock
+!keycode 9 = Escape
+!remove Lock = Caps_Lock
+!add Lock = Escape
+!keycode 9 = Caps_Lock
+!keycode 66 = Escape
